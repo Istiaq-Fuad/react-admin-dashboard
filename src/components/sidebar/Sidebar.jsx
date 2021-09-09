@@ -11,7 +11,6 @@ import {
   DynamicFeed,
   ChatBubbleOutline,
   WorkOutline,
-  // Report,
 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
@@ -28,11 +27,11 @@ export default function Sidebar() {
               Home
             </li>
             </Link>
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <Timeline className="sidebarIcon" />
               Analytics
             </li>
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <TrendingUp className="sidebarIcon" />
               Sales
             </li>
@@ -53,11 +52,11 @@ export default function Sidebar() {
                 Products
               </li>
             </Link>
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <AttachMoney className="sidebarIcon" />
               Transactions
             </li>
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <BarChart className="sidebarIcon" />
               Reports
             </li>
@@ -66,15 +65,15 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <MailOutline className="sidebarIcon" />
               Mail
             </li>
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <DynamicFeed className="sidebarIcon" />
               Feedback
             </li>
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <ChatBubbleOutline className="sidebarIcon" />
               Messages
             </li>
@@ -83,18 +82,14 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <WorkOutline className="sidebarIcon" />
               Manage
             </li>
-            <li className="sidebarListItem">
+            <li className="sidebarListItem inactive">
               <Timeline className="sidebarIcon" />
               Analytics
             </li>
-            {/* <li className="sidebarListItem">
-              <Report className="sidebarIcon" />
-              Reports
-            </li> */}
           </ul>
         </div>
       </div>
